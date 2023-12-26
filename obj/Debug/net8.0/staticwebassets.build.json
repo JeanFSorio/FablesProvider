@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "tW+M9GBFydwHtnZ4tVz7Ex3oO3kKBlTE1ANHoHAt0FE=",
+  "Source": "FablesProvider.Api",
+  "BasePath": "_content/FablesProvider.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

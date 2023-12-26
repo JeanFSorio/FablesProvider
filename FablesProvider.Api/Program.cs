@@ -12,7 +12,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.WebHost.UseUrls("http://*:80");
+
+int port = Environment.GetEnvironmentVariable("PORT") != null ? int.Parse(Environment.GetEnvironmentVariable("PORT")) : 80;
+
+builder.WebHost.UseUrls("http://*:" + port);
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<FablesDbContext>(options =>
         options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"))

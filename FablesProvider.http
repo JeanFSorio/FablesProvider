@@ -1,0 +1,6 @@
+@FablesProvider_HostAddress = http://localhost:5094
+
+GET {{FablesProvider_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
